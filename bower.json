@@ -8,7 +8,7 @@
   "description": "",
   "main": "",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "ignore": [
     ".idea",
     ".gitignore",
