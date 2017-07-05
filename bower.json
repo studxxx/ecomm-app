@@ -1,0 +1,30 @@
+{
+  "name": "ecomm-app",
+  "version": "0.0.1",
+  "homepage": "git@github.com:studxxx/ecomm-app.git",
+  "authors": [
+    "valentyns <stud181177@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    ".idea",
+    ".gitignore",
+    ".jsscrc",
+    ".jshintrc",
+    "package.json",
+    "gulpfile.js",
+    "karma.conf.js",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=2.1.3",
+    "bootstrap": ">=3.3.7"
+  }
+}
