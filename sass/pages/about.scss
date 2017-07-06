@@ -1,10 +1,10 @@
-@import '../global/_variables'; // global variables.
+@import '../global/_variables';
+// global variables.
 @import '../global/components/_mixins'; // global mixings.
 
 /***
 Anout Us Page
 ***/
-
 
 /* BEGIN HEADER */
 .about-header {
@@ -15,13 +15,13 @@ Anout Us Page
   margin: 0 -20px;
 }
 
-.about-header h1 { 
+.about-header h1 {
   color: #fff;
   font-size: 55px;
   font-weight: 600;
   margin-top: 130px;
-  text-shadow: 1px 1px 0px rgba(0,0,0, 0.2);
- }
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
 
 .about-header h2 {
   color: #fff;
@@ -31,7 +31,8 @@ Anout Us Page
   text-transform: uppercase;
   margin-top: 30px;
   margin-bottom: 40px;
- }
+}
+
 /* END HEADER */
 
 /* BEGIN CARD */
@@ -45,9 +46,9 @@ Anout Us Page
 .card-icon i {
   font-size: 50px;
   border: 1px solid #ecf0f4;
-  -webkit-border-radius: 50%; 
-  -moz-border-radius: 50%; 
-  border-radius: 50%; 
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
   padding: 47px 30px;
   margin: 30px 0 30px 0;
 }
@@ -73,12 +74,13 @@ Anout Us Page
   font-weight: 400;
   color: #808a94;
 }
+
 /* END CARD */
 
 /* BEGIN LINKS BLOCK */
 .about-links-cont {
   background-color: #fff;
-  margin:0 -20px;
+  margin: 0 -20px;
 }
 
 .about-links-cont .about-links {
@@ -116,6 +118,7 @@ Anout Us Page
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /* END LINKS BLOCK */
 
 /* BEGIN MEMBERS SUCCESS STORIES */
@@ -127,7 +130,7 @@ Anout Us Page
   color: #373d43;
   font-size: 35px;
   font-weight: 600;
- }
+}
 
 .stories-header h2 {
   color: #808a94;
@@ -136,7 +139,7 @@ Anout Us Page
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 20px;
- }
+}
 
 .stories-cont .photo {
   width: 100%;
@@ -146,9 +149,9 @@ Anout Us Page
   margin: 30px auto;
   width: 130px;
   height: 130px;
-  -webkit-border-radius: 50% !important; 
-  -moz-border-radius: 50% !important; 
-  border-radius: 50% !important; 
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
 }
 
 .stories-cont .title {
@@ -176,80 +179,80 @@ Anout Us Page
 .stories-footer {
   text-align: center;
 }
+
 /* END MEMBERS SUCCESS STORIES */
 
 /* BEGIN ABOUt AND VIDEO */
 
 .about-text {
-  height:500px;
-  padding:0 !important;
+  height: 500px;
+  padding: 0 !important;
 
   > h4 {
     background-color: #d9534f;
-      font-size: 24px; 
-      font-weight: 600;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 1em 20px;
+    margin: 0;
+
+    > i {
+      font-size: 24px !important;
       color: #fff;
-      padding:1em 20px;
-      margin:0;
+    }
+  }
 
-    > i{
-        font-size:24px !important;
-        color:#fff;
-      }
+  > p {
+    color: #808a94;
+  }
+
+  ul,
+  > p,
+  .about-quote {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+  }
+
+  .about-quote {
+
+    > h3 {
+      border-left: 3px solid;
+      border-color: #ccc;
+      padding-left: 1em;
+      font-style: italic;
+      line-height: 1.3em;
     }
 
-    >p{
-      color: #808a94;
+    > .about-author {
+      text-align: right;
     }
-
-    ul, 
-    > p, 
-    .about-quote {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    li{
-      margin-bottom:0.5em;
-    }
-
-    .about-quote{
-
-      > h3{
-        border-left: 3px solid;
-        border-color:#ccc;
-        padding-left:1em;
-        font-style: italic;
-        line-height: 1.3em;
-      }
-
-      > .about-author{
-        text-align:right;
-      }
-    }
+  }
 }
 
-.about-image{
-  height:545px;
+.about-image {
+  height: 545px;
 }
 
-.about-links-item{
-  margin-bottom:2em;
+.about-links-item {
+  margin-bottom: 2em;
 }
-
 
 /* END ABOUt AND VIDEO */
 
 /* BEGIN RESPONSIVE */
 
-@media (max-width:600px) {
-  .about-text{
-    height:auto;
-    padding-bottom:1.5em !important;
+@media (max-width: 600px) {
+  .about-text {
+    height: auto;
+    padding-bottom: 1.5em !important;
   }
 
-  .about-image{
-    margin:0 -20px;
+  .about-image {
+    margin: 0 -20px;
   }
 }
 

@@ -16,41 +16,41 @@ Bootstrap Modal
 
 /* BS 3.3.1 fix */
 
-.modal-backdrop { 
-	position: fixed; 
-	bottom: 0; 
+.modal-backdrop {
+  position: fixed;
+  bottom: 0;
 }
 
 .modal-scrollable {
-    overflow: hidden !important;
-    z-index: 10051;
-    overflow-y: scroll !important;
+  overflow: hidden !important;
+  z-index: 10051;
+  overflow-y: scroll !important;
 }
 
-@if $theme-type == "material-design" { 
+@if $theme-type == "material-design" {
 
-    .modal {
-        @extend .md-shadow-z-3 !optional;
-    	@include border-radius($general-border-radius);
-    	border: 0 !important;   
+  .modal {
+    @extend .md-shadow-z-3 !optional;
+    @include border-radius($general-border-radius);
+    border: 0 !important;
 
-        .modal-body {
-            @include border-radius($general-border-radius);
-            border: 0;
-        }
-
-        .modal-title {   
-            font-weight: 400;           
-        }
-   
-        .modal-footer {
-            border: 0 !important;
-        }
+    .modal-body {
+      @include border-radius($general-border-radius);
+      border: 0;
     }
 
-    .modal-backdrop, 
-    .modal-backdrop.fade.in {
-    	@include opacity(0.2);           
-    }  
+    .modal-title {
+      font-weight: 400;
+    }
+
+    .modal-footer {
+      border: 0 !important;
+    }
+  }
+
+  .modal-backdrop,
+  .modal-backdrop.fade.in {
+    @include opacity(0.2);
+  }
 
 }

@@ -1,158 +1,158 @@
-@import '../global/_variables'; // global variables.
+@import '../global/_variables';
+// global variables.
 @import '../global/components/_mixins'; // global mixings.
 
 /***
 Inbox Page
 ***/
 .inbox {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    .compose-btn {
-        padding: 8px 14px;
-    }
+  .compose-btn {
+    padding: 8px 14px;
+  }
 
-    .inbox-content {
-        min-height: 400px;
-    }
+  .inbox-content {
+    min-height: 400px;
+  }
 
-    .inbox-nav {
-        margin: 30px 0;
+  .inbox-nav {
+    margin: 30px 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+      padding: 0;
+      margin: 0;
+
+      > a {
+        text-decoration: none !important;
+
+        display: block;
+        padding: 8px 16px;
+        border-left: 4px solid transparent;
+
+        &:hover {
+          background: $general-panel-bg-color;
+
+        }
+
+        .badge {
+          float: right;
+          margin-top: 1px;
+        }
+      }
+
+      &.active {
+        > a {
+          border-left: 4px solid $brand-danger;
+        }
+      }
+
+      &.divider {
         padding: 0;
-        list-style: none;
-
-        > li {
-            padding: 0;
-            margin: 0;
-
-            > a {
-                text-decoration: none !important;
-
-                display: block;
-                padding: 8px 16px;
-                border-left: 4px solid transparent;
-
-                &:hover {
-                    background: $general-panel-bg-color;
-                    
-                }
-
-                .badge {
-                    float: right;
-                    margin-top: 1px;
-                }
-            }
-
-            &.active {
-                > a {
-                    border-left: 4px solid $brand-danger;
-                }
-            }
-
-            &.divider {
-                padding: 0;
-                margin: 4px 16px;
-                border-top: 1px solid darken($general-panel-bg-color, 1%);
-            }
-        }
+        margin: 4px 16px;
+        border-top: 1px solid darken($general-panel-bg-color, 1%);
+      }
     }
+  }
 
-    .inbox-contacts {
-        margin: 0 0 30px 0;
+  .inbox-contacts {
+    margin: 0 0 30px 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+      padding: 0;
+      margin: 0;
+
+      &.divider {
         padding: 0;
-        list-style: none;
+        margin: 4px 16px;
+        border-top: 1px solid darken($general-panel-bg-color, 1%);
+      }
 
-        > li {
-            padding: 0;
-            margin: 0;
+      > a {
+        position: relative;
+        display: block;
+        padding: 8px 16px;
+        color: $general-panel-font-color;
 
-            &.divider {
-                padding: 0;
-                margin: 4px 16px;
-                border-top: 1px solid darken($general-panel-bg-color, 1%);
-            }
-
-            > a {
-                position: relative;
-                display: block;
-                padding: 8px 16px;
-                color: $general-panel-font-color;
-
-                &:hover {
-                    background: $general-panel-bg-color;
-                    text-decoration: none;
-                }
-
-                .contact-name {
-                    display: inline-block;
-                    padding-left: 5px;
-                }
-
-                .contact-pic {
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50% !important;
-                }
-
-                .contact-status {
-                    position: absolute;
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 50% !important;
-                    left: 38px;
-                    top: 30px;
-                }
-            }
+        &:hover {
+          background: $general-panel-bg-color;
+          text-decoration: none;
         }
+
+        .contact-name {
+          display: inline-block;
+          padding-left: 5px;
+        }
+
+        .contact-pic {
+          width: 30px;
+          height: 30px;
+          border-radius: 50% !important;
+        }
+
+        .contact-status {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border-radius: 50% !important;
+          left: 38px;
+          top: 30px;
+        }
+      }
+    }
+  }
+
+  .input-actions {
+    .btn {
+      margin-left: 10px;
+    }
+  }
+
+  .inbox-view-info {
+    color: #666;
+    padding: 5px 0;
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+
+    .inbox-author {
+      border-radius: 50% !important;
+      margin-right: 10px;
     }
 
-    .input-actions {
-        .btn {
-            margin-left: 10px;
-        }
+    .inbox-info-btn .btn-group {
+      float: right;
+      margin-top: 5px;
     }
+  }
 
-    .inbox-view-info {
-        color: #666;  
-        padding: 5px 0;
-        border-top: solid 1px #eee;
-        border-bottom: solid 1px #eee;
+  .inbox-sidebar {
+    padding: 20px;
+    border: 1px solid $general-panel-border-color;
+    border-radius: $general-border-radius;
+  }
 
-        .inbox-author {
-            border-radius: 50% !important;
-            margin-right: 10px;
-        }
+  .inbox-body {
+    padding: 20px;
+    border: 1px solid $general-panel-border-color;
+    border-radius: $general-border-radius;
+  }
 
-        .inbox-info-btn .btn-group {
-            float: right;
-            margin-top: 5px;
-        }
-    }
-
+  .page-container-bg-solid & {
     .inbox-sidebar {
-      padding: 20px;
-      border: 1px solid $general-panel-border-color;
-      border-radius: $general-border-radius;
+      background: #ffffff;
+      border: 0;
     }
-        
+
     .inbox-body {
-      padding: 20px;
-      border: 1px solid $general-panel-border-color;
-      border-radius: $general-border-radius;
+      background: #ffffff;
+      border: 0;
     }
+  }
 
-    .page-container-bg-solid & {
-        .inbox-sidebar {
-            background: #ffffff;
-            border: 0;
-        }
-        
-        .inbox-body {
-            background: #ffffff;
-            border: 0;
-        }
-    }
-
-    
 }
 
 .inbox .inbox {
@@ -168,7 +168,6 @@ Inbox Page
   font-size: 22px;
   font-weight: 300;
 }
-
 
 /*Inbox Content*/
 .inbox .inbox-header {
@@ -201,7 +200,7 @@ Inbox Page
   display: inline-block;
 }
 
-.inbox tr.unread td{
+.inbox tr.unread td {
   font-weight: 600;
 }
 
@@ -214,7 +213,7 @@ Inbox Page
 
 .inbox tr i.icon-star,
 .inbox tr i.icon-trash {
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .inbox tr i.icon-star {
@@ -226,15 +225,15 @@ Inbox Page
 }
 
 .inbox tr i.inbox-started {
-  color: #fd7b12;  
+  color: #fd7b12;
 }
 
-.inbox .table th, 
+.inbox .table th,
 .inbox .table td {
   border: none;
 }
 
-.inbox .table th {  
+.inbox .table th {
   background: #eef4f7;
   border-bottom: solid 5px #fff;
 }
@@ -249,7 +248,6 @@ Inbox Page
   padding: 1px 4px 0;
 }
 
-
 .inbox td.text-right {
   width: 100px;
   text-align: right;
@@ -259,16 +257,16 @@ Inbox Page
   width: 10px;
 }
 
-.inbox .table-hover tbody tr:hover>td, 
-.inbox .table-hover tbody tr:hover>th, 
-.inbox .table-striped tbody>tr:nth-child(odd)>td, 
-.inbox .table-striped tbody>tr:nth-child(odd)>th {
-  background: #f8fbfd;  
+.inbox .table-hover tbody tr:hover > td,
+.inbox .table-hover tbody tr:hover > th,
+.inbox .table-striped tbody > tr:nth-child(odd) > td,
+.inbox .table-striped tbody > tr:nth-child(odd) > th {
+  background: #f8fbfd;
   cursor: pointer;
 }
 
-.inbox .table-hover tbody tr:hover>td, 
-.inbox .table-hover tbody tr:hover>th {
+.inbox .table-hover tbody tr:hover > td,
+.inbox .table-hover tbody tr:hover > th {
   background: #eef4f7;
 }
 
@@ -368,7 +366,6 @@ Inbox Page
   margin-bottom: 15px;
 }
 
-
 /*Inbox Compose*/
 .inbox-compose {
   margin-top: 1px;
@@ -408,6 +405,7 @@ Inbox Page
 .inbox-compose .controls > input {
   border: none !important;
 }
+
 .inbox-compose .controls-to {
   padding-right: 55px;
 }
@@ -463,7 +461,7 @@ Inbox Page
   border-color: #eee;
 }
 
-.inbox-compose .wysihtml5-toolbar {  
+.inbox-compose .wysihtml5-toolbar {
   border: 0;
   border-bottom: 1px solid #eee;
 }
@@ -477,11 +475,11 @@ Inbox Page
 .inbox-compose .wysihtml5-toolbar > li > a,
 .inbox-compose .wysihtml5-toolbar > li > div > a {
   background: #fff !important;
-  border-color:  #fff !important;
+  border-color: #fff !important;
 
   &:hover {
     background: #f1f1f1 !important;
-    border-color:  #f1f1f1 !important;
+    border-color: #f1f1f1 !important;
     border-radius: 0;
   }
 }

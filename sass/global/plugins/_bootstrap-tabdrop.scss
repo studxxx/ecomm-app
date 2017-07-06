@@ -3,28 +3,28 @@
  */
 
 .tabbable-tabdrop {
-	.nav-tabs,
-	.nav-pills {
-  		position: relative;
+  .nav-tabs,
+  .nav-pills {
+    position: relative;
 
-  		.caret {
-  			display: none;      
-  		}
+    .caret {
+      display: none;
+    }
 
-  		.tabdrop .dropdown-toggle i {
-  			font-size: 14px;     
-  		}
-	}
+    .tabdrop .dropdown-toggle i {
+      font-size: 14px;
+    }
+  }
 
-	.dropdown-menu {
-		&:after {
-			right: 10px;
-			left: auto;
-		}
+  .dropdown-menu {
+    &:after {
+      right: 10px;
+      left: auto;
+    }
 
-		&:before {
-			right: 9px;
-			left: auto;
-		}
-	}
+    &:before {
+      right: 9px;
+      left: auto;
+    }
+  }
 }

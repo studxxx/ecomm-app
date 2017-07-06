@@ -32,8 +32,8 @@ Bootstrap Select
 }
 
 .bootstrap-select .btn:focus {
-    outline: none !important;
-    outline-offset: 0;
+  outline: none !important;
+  outline-offset: 0;
 }
 
 .bootstrap-select.btn-group .dropdown-menu {
@@ -58,12 +58,12 @@ Bootstrap Select
 }
 
 .bootstrap-select .caret:before {
-    content: "\f107";
-    display: inline-block;
-    border: 0; 
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
+  content: "\f107";
+  display: inline-block;
+  border: 0;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .bootstrap-select .selected i {
@@ -74,6 +74,6 @@ Bootstrap Select
   z-index: $zindex-dropdown !important;
 }
 
-.modal-open .bootstrap-select .dropdown-menu  {
+.modal-open .bootstrap-select .dropdown-menu {
   z-index: $zindex-modal !important;
 }

@@ -25,24 +25,34 @@
 @mixin border-radius($radius, $important: '') {
   -webkit-border-radius: $radius#{$important};
   -moz-border-radius: $radius#{$important};
-  -ms-border-radius: $radius#{$important};  
-  -o-border-radius: $radius#{$important};      
-  border-radius: $radius#{$important}; 
+  -ms-border-radius: $radius#{$important};
+  -o-border-radius: $radius#{$important};
+  border-radius: $radius#{$important};
 }
 
 // Placeholder text
 // -------------------------
 @mixin placeholder($color: $input-color-placeholder) {
-  &::-moz-placeholder           { color: $color; opacity: 1; } // See https://github.com/twbs/bootstrap/pull/11526
-  &:-ms-input-placeholder       { color: $color; } // Internet Explorer 10+
-  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  // See https://github.com/twbs/bootstrap/pull/11526
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  // Internet Explorer 10+
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  // Safari and Chrome
 }
 
 // Drop shadows
 // By default set to: none
 @mixin box-shadow($shadow) {
   -webkit-box-shadow: none; // iOS <4.3 & Android <4.1
-          box-shadow: none;
+  box-shadow: none;
 }
 
 // Labels
@@ -57,11 +67,11 @@
   }
 }
 
-@mixin  ease-out($duration: 450ms, $property: all, $delay: 0ms) {
+@mixin ease-out($duration: 450ms, $property: all, $delay: 0ms) {
   transition: $property $duration cubic-bezier(0.23, 1, 0.32, 1) $delay;
 }
 
-@mixin  pulsate($animation-name, $start-size: 0.75, $end-size: 1, $duration: 1.5s) {
+@mixin pulsate($animation-name, $start-size: 0.75, $end-size: 1, $duration: 1.5s) {
   @keyframes "#{$animation-name}" {
     0%, 100% {
       transform: scale($start-size);
@@ -69,21 +79,21 @@
     50% {
       transform: scale($end-size);
     }
-  }  
+  }
   animation: $animation-name $duration ease 0s infinite;
 }
 
 /* Cubic Bezier Transition */
-@mixin cubic-transition ($delay, $duration, $property) {
-    transition: {
-        duration: $duration;
-        property: $property;
-        timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-    } 
+@mixin cubic-transition($delay, $duration, $property) {
+  transition: {
+    duration: $duration;
+    property: $property;
+    timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  }
 }
 
 @mixin background-opacity($color, $opacity: 0.3) {
-    background: rgba($color, $opacity);
+  background: rgba($color, $opacity);
 }
 
 @mixin vertical-align($position: absolute) {
@@ -94,7 +104,7 @@
   transform: translateY(-50%);
 }
 
-@mixin transform($degree) {  
+@mixin transform($degree) {
   webkit-transform: $degree;
   -moz-transform: $degree;
   -ms-transform: $degree;

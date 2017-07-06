@@ -1,4 +1,5 @@
-@import '../global/_variables'; // global variables.
+@import '../global/_variables';
+// global variables.
 @import '../global/components/_mixins'; // global mixings.
 
 /***
@@ -7,7 +8,6 @@ Login page
 
 /* bg color */
 $bg-color: #364150;
-
 
 .login {
   background-color: $bg-color !important;
@@ -25,15 +25,15 @@ $bg-color: #364150;
   @include border-radius(7px);
   width: 400px;
   margin: 40px auto 10px auto;
-  padding: 30px;  
+  padding: 30px;
   padding-top: 10px;
   overflow: hidden;
   position: relative;
 }
 
-.login .content h3 {  
+.login .content h3 {
   color: #4db3a5;
-  text-align: center; 
+  text-align: center;
   font-size: 28px;
   font-weight: 400 !important;
 }
@@ -51,19 +51,19 @@ $bg-color: #364150;
 .login .content .login-form,
 .login .content .forget-form {
   padding: 0px;
-  margin:0px;
+  margin: 0px;
 }
 
 .login .content .form-control {
   border: none;
   background-color: #dde3ec;
-  height: 43px; 
+  height: 43px;
   color: #8290a3;
   border: 1px solid #dde3ec;
 
   &:focus,
   &:active {
-      border: 1px solid #c3ccda;
+    border: 1px solid #c3ccda;
   }
 
   @include placeholder(#8290a3);
@@ -109,19 +109,19 @@ $bg-color: #364150;
 .login-options h4 {
   float: left;
   font-weight: 600;
-  font-size: 15px; 
+  font-size: 15px;
   color: #7d91aa !important;
 }
 
-.login-options .social-icons {  
+.login-options .social-icons {
   float: right;
   padding-top: 3px;
 }
 
-.login-options .social-icons  li a {  
+.login-options .social-icons li a {
   border-radius: 15px 15px 15px 15px !important;
   -moz-border-radius: 15px 15px 15px 15px !important;
-  -webkit-border-radius: 15px 15px 15px 15px !important;  
+  -webkit-border-radius: 15px 15px 15px 15px !important;
 }
 
 .login .content .form-actions .checkbox {
@@ -147,12 +147,12 @@ $bg-color: #364150;
 
 .login .content .form-actions .btn {
   font-weight: 600;
-  padding: 10px 20px !important; 
+  padding: 10px 20px !important;
 }
 
 .login .content .form-actions .btn-default {
   font-weight: 600;
-  padding: 10px 25px !important; 
+  padding: 10px 25px !important;
   color: #6c7a8d;
   background-color: #ffffff;
   border: none;
@@ -166,7 +166,7 @@ $bg-color: #364150;
 .login .content .forget-password {
   font-size: 14px;
   float: right;
-  display: inline-block; 
+  display: inline-block;
   margin-top: 10px;
 }
 
@@ -176,14 +176,14 @@ $bg-color: #364150;
 
 .login .content .rememberme {
   margin-left: 8px;
-  
+
 }
 
-.login .content .create-account {   
+.login .content .create-account {
   margin: 0 -40px -30px -40px;
   padding: 15px 0 17px 0;
   text-align: center;
-  background-color: #6c7a8d;  
+  background-color: #6c7a8d;
   @include border-radius(0 0 7px 7px);
 
   > p {
@@ -191,9 +191,9 @@ $bg-color: #364150;
   }
 }
 
-.login .content .create-account p a { 
+.login .content .create-account p a {
   font-weight: 600;
-  font-size: 14px; 
+  font-size: 14px;
   color: #c3cedd;
 }
 
@@ -221,7 +221,7 @@ $bg-color: #364150;
 
   .login .content {
     width: 280px;
-    margin-top: 10px; 
+    margin-top: 10px;
   }
 
   .login .content h3 {
@@ -230,16 +230,16 @@ $bg-color: #364150;
 
   .forget-password {
     display: inline-block;
-    margin-top: 20px; 
-  }  
-  
-  .login-options .social-icons {  
+    margin-top: 20px;
+  }
+
+  .login-options .social-icons {
     float: left;
     padding-top: 3px;
   }
-  
+
   .login .checkbox {
     font-size: 13px;
   }
-  
+
 }

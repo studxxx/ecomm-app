@@ -1,4 +1,5 @@
-@import '../global/_variables'; // global variables.
+@import '../global/_variables';
+// global variables.
 @import '../global/components/_mixins'; // global mixings.
 
 /* Apply these styles only when #preview-pane has
@@ -9,7 +10,7 @@
   z-index: 2000;
   right: -200px;
   padding: 6px;
-  border: 1px rgba(0,0,0,.4) solid;
+  border: 1px rgba(0, 0, 0, .4) solid;
   background-color: white;
 
   -webkit-border-radius: 6px;
@@ -21,7 +22,7 @@
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 1024px) { 
+@media (max-width: 1024px) {
   #preview-pane {
     right: 0;
   }
@@ -37,11 +38,11 @@
   overflow: hidden;
 }
 
-  #demo7 {
-    background-color: #eee;
-    width: 500px;
-    height: 330px;
-    font-size: 24px;
-    font-weight: 300;
-    display: block;
-  }
+#demo7 {
+  background-color: #eee;
+  width: 500px;
+  height: 330px;
+  font-size: 24px;
+  font-weight: 300;
+  display: block;
+}

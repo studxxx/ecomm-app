@@ -16,13 +16,13 @@ Bootstrap Daterangepicker
 }
 
 .daterangepicker td {
-  text-shadow: none ;
+  text-shadow: none;
 }
 
 .daterangepicker td.active {
-  background-color: #4b8df8 ;
-  background-image: none ;
-  filter:none ;
+  background-color: #4b8df8;
+  background-image: none;
+  filter: none;
 }
 
 .daterangepicker th {
@@ -30,7 +30,7 @@ Bootstrap Daterangepicker
   font-size: 14px;
 }
 
-.daterangepicker .ranges input[type="text"]  {
+.daterangepicker .ranges input[type="text"] {
   width: 70px !important;
   font-size: 11px;
   vertical-align: middle;
@@ -61,7 +61,7 @@ Bootstrap Daterangepicker
   color: #333;
 }
 
-.daterangepicker .ranges li.active, 
+.daterangepicker .ranges li.active,
 .daterangepicker .ranges li:hover {
   background: #4b8df8 !important;
   border: 1px solid #4b8df8 !important;
