@@ -6,7 +6,7 @@
     "valentyns <stud181177@gmail.com>"
   ],
   "description": "",
-  "main": "",
+  "main": "dist/*",
   "license": "MIT",
   "private": false,
   "ignore": [
@@ -15,6 +15,7 @@
     ".jsscrc",
     ".jshintrc",
     "package.json",
+    "sass",
     "gulpfile.js",
     "karma.conf.js",
     "**/.*",
