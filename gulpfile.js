@@ -11,6 +11,12 @@ var uglify = require("gulp-uglify");
 var rtlcss = require("gulp-rtlcss");
 var connect = require('gulp-connect');
 
+// @todo
+// https://www.npmjs.com/package/gulp-copy
+// https://www.npmjs.com/package/gulp-file-copy
+// https://www.npmjs.com/package/gulp-imagemin
+// http://gearmobile.github.io/gulp/gulp-imagemin/
+
 //*** Localhost server tast
 gulp.task('localhost', function () {
     connect.server();
